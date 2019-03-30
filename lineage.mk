@@ -13,11 +13,11 @@
 # limitations under the License.
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/cm/config/common_full_tablet_3gonly.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/matissewifi/full_matissewifi.mk)
+$(call inherit-product, device/samsung/matisse3g/full_matisse3g.mk)
 
-PRODUCT_RELEASE_NAME := SM-T530
-PRODUCT_DEVICE := matissewifi
-PRODUCT_NAME := lineage_matissewifi
+PRODUCT_RELEASE_NAME := SM-T531
+PRODUCT_DEVICE := matisse3g
+PRODUCT_NAME := lineage_matisse3g
