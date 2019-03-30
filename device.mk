@@ -16,13 +16,13 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-LOCAL_PATH := device/samsung/matissewifi
+LOCAL_PATH := device/samsung/matisse3g
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/matissewifi/matissewifi-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/matisse3g/matisse3g-vendor.mk)
 
 # Disable RIL
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -35,17 +35,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #RIL
 BOARD_PROVIDES_LIBRIL := false
-
-# SM-T530NU
-# IR Blaster Permissions
-PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml
-
-# SM-T530NU
-# IR Blaster
-#PRODUCT_PACKAGES += \
-    consumerir.default
-#    consumerir.msm8226 \
 
 # matisse-common
 $(call inherit-product, device/samsung/matisse-common/matisse.mk)
