@@ -13,14 +13,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# inherit from common matisse-common
--include device/samsung/matisse-common/BoardConfigCommon.mk
+# inherit from common millet-common
+-include device/samsung/millet-common/BoardConfigCommon.mk
 
 # Recovery
-TARGET_OTA_ASSERT_DEVICE := matissewifi,matisse3g
+TARGET_OTA_ASSERT_DEVICE := milletwifi,millet3g
 
 # Kernel
-TARGET_KERNEL_VARIANT_CONFIG := msm8226-sec_matisse3g_defconfig
+TARGET_KERNEL_VARIANT_CONFIG := msm8226-sec_millet3g_defconfig
 
 # inherit from the proprietary version
--include vendor/samsung/matisse3g/BoardConfigVendor.mk
+-include vendor/samsung/millet3g/BoardConfigVendor.mk
