@@ -1,6 +1,6 @@
 # Tab 4 Light Project/Rom
 
-**Device repo for Samsung Galaxy Tab 4 8.0 milletwifi (SM-T330 & SM-T330NU)**
+**Vendor repo for Samsung Galaxy Tab 4 8.0 millet3g(SM-T330 & SM-T330NU)**
 
 |Code Name|Model Number|ScreenSize|Colors|
 |--|--|--|--|
