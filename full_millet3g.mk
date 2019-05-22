@@ -17,9 +17,9 @@
 $(call inherit-product, device/samsung/milletwifi/device.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_DEVICE := milletwifi
-PRODUCT_NAME := full_milletwifi
+PRODUCT_DEVICE := millet3g
+PRODUCT_NAME := full_millet3g
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-T530
+PRODUCT_MODEL := SM-T331
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_CHARACTERISTICS := tablet
