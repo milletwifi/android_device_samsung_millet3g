@@ -16,8 +16,8 @@
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/matisse3g/full_matisse3g.mk)
+$(call inherit-product, device/samsung/millet3g/full_millet3g.mk)
 
 PRODUCT_RELEASE_NAME := SM-T531
-PRODUCT_DEVICE := matisse3g
-PRODUCT_NAME := lineage_matisse3g
+PRODUCT_DEVICE := millet3g
+PRODUCT_NAME := lineage_millet3g

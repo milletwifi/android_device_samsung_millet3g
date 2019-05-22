@@ -16,13 +16,13 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-LOCAL_PATH := device/samsung/matisse3g
+LOCAL_PATH := device/samsung/millet3g
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/matisse3g/matisse3g-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/millet3g/millet3g-vendor.mk)
 
 # Disable RIL
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -36,8 +36,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #RIL
 BOARD_PROVIDES_LIBRIL := false
 
-# matisse-common
-$(call inherit-product, device/samsung/matisse-common/matisse.mk)
+# millet-common
+$(call inherit-product, device/samsung/millet-common/millet.mk)
 
 # DJABHipHop Builds(Personal Build)
 #DEVICE_SUPPORT_DJ :=true
