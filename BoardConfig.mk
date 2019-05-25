@@ -18,9 +18,14 @@
 
 # Recovery
 TARGET_OTA_ASSERT_DEVICE := milletwifi,millet3g
+TARGET_OTA_ASSERT_DEVICE += milletwifi,milletwifiue,milletwifixx
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8226-sec_millet3g_defconfig
+
+# Radio
+PRODUCT_PACKAGES += \
+    libril_shim
 
 # inherit from the proprietary version
 -include vendor/samsung/millet3g/BoardConfigVendor.mk
