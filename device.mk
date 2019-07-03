@@ -45,7 +45,8 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_OUT_ETC)/system/etc/permissions/android.hardware.telephony.gsm.xml
 
 # millet-common
-$(call inherit-product, device/samsung/millet-common/millet.mk)
+$(call inherit-product, device/samsung/millet-common
 
 # TODO: opengapps
-$(call inherit-product, vendor/light/config/opengapps.mk)
+$(call inherit-product, vendor/Gapps-Preloader/opengapps.mk)
+
