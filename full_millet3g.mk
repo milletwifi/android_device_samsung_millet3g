@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Inherit from milletwifi device
-$(call inherit-product, device/samsung/milletwifi/device.mk)
+$(call inherit-product, device/samsung/millet3g/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := millet3g
