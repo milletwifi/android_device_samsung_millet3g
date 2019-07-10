@@ -23,9 +23,22 @@ TARGET_OTA_ASSERT_DEVICE += milletwifi,milletwifiue,milletwifixx
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8226-sec_millet3g_defconfig
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+
+# Radio
+TARGET_RIL_VARIANT := caf
+BOARD_PROVIDES_LIBRIL := false
+
+# Custom RIL class
+BOARD_RIL_CLASS := ../../../$(DEVICE_PATH)/ril
+
 # Radio
 PRODUCT_PACKAGES += \
-    libril_shim
+libril_shim
+
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # inherit from the proprietary version
 -include vendor/samsung/millet3g/BoardConfigVendor.mk
