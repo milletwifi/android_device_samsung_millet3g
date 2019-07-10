@@ -20,6 +20,8 @@
 TARGET_OTA_ASSERT_DEVICE := milletwifi,millet3g
 TARGET_OTA_ASSERT_DEVICE += milletwifi,milletwifiue,milletwifixx
 
+DEVICE_PATH := device/samsung/millet3g
+
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8226-sec_millet3g_defconfig
 
