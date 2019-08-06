@@ -23,14 +23,17 @@ TARGET_OTA_ASSERT_DEVICE += milletwifi,milletwifiue,milletwifixx
 DEVICE_PATH := device/samsung/millet3g
 
 # Kernel
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
 TARGET_KERNEL_VARIANT_CONFIG := msm8226-sec_millet3g_defconfig
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
-# Radio
+# RIL
+#BOARD_VENDOR := samsung
+#BOARD_MOBILEDATA_INTERFACE_NAME := "rmnet0"
+BOARD_PROVIDES_LIBRIL := true
 TARGET_RIL_VARIANT := caf
-BOARD_PROVIDES_LIBRIL := false
 
 # Custom RIL class
 BOARD_RIL_CLASS := ../../../$(DEVICE_PATH)/ril
@@ -41,6 +44,9 @@ libril_shim
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
+# Build
+BLOCK_BASED_OTA := true
 
 # inherit from the proprietary version
 -include vendor/samsung/millet3g/BoardConfigVendor.mk
