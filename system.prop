@@ -16,3 +16,15 @@ persist.rild.nitz_short_ons_0=""
 persist.rild.nitz_short_ons_1=""
 persist.rild.nitz_short_ons_2=""
 persist.rild.nitz_short_ons_3=""
+
+# Stock Build.prop Setting
+debug.composition.type=c2d
+persist.demo.hdmirotationlock=false
+
+ro.hdmi.enable=true
+tunnel.decode=true
+tunnel.audiovideo.decode=true
+lpa.decode=false
+lpa.use-stagefright=true
+persist.speaker.prot.enable=false
+qcom.hw.aac.encoder=true

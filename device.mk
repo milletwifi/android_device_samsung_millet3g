@@ -53,6 +53,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	dalvik.vm.heapmaxfree=8m \
 	dalvik.vm.heapsize=36m \
 
+# Ramdisk
+PRODUCT_PACKAGES += \
+	init.ril.rc
+
 # Data line Permissions
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_OUT_ETC)/system/etc/permissions/android.hardware.telephony.cdma.xml \
