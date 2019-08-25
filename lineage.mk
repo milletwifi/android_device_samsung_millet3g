@@ -16,8 +16,7 @@
 $(call inherit-product, device/samsung/millet3g/full_millet3g.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
-$(call inherit-product, vendor/cm/config/telephony.mk)
+$(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 PRODUCT_RELEASE_NAME := SM-T331
 PRODUCT_DEVICE := millet3g
