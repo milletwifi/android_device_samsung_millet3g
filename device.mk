@@ -67,6 +67,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, device/samsung/millet-common/millet.mk)
 
 DEVICE_HAS_DATELINE := true
+DEVICE_HAS_VOICE_CAPABILITY := true
 
 # TODO: opengapps
 $(call inherit-product, vendor/Gapps-Preloader/opengapps.mk)
