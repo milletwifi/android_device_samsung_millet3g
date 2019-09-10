@@ -17,8 +17,7 @@
 -include device/samsung/millet-common/BoardConfigCommon.mk
 
 # Recovery
-TARGET_OTA_ASSERT_DEVICE := milletwifi,millet3g
-TARGET_OTA_ASSERT_DEVICE += milletwifi,milletwifiue,milletwifixx
+TARGET_OTA_ASSERT_DEVICE := millet3g
 
 DEVICE_PATH := device/samsung/millet3g
 
