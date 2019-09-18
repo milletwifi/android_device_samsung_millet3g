@@ -1,10 +1,15 @@
+#
+# from device/samsung/milletlte/system.prop
+#
 # Radio
 persist.data.netmgrd.qos.enable=true
 persist.data.qmi.adb_logmask=0
 persist.radio.add_power_save=1
 rild.libargs=-d /dev/smd0
 rild.libpath=/system/lib/libsec-ril.so
-# ro.telephony.ril_class=SamsungMSM8226RIL
+ro.telephony.mms_data_profile=5
+ro.ril.telephony.mqanelements=6
+ro.telephony.ril_class=SamsungMSM8226RIL
 ro.telephony.ril.config=simactivation
 ro.use_data_netmgrd=false
 persist.rild.nitz_plmn=""
@@ -16,6 +21,12 @@ persist.rild.nitz_short_ons_0=""
 persist.rild.nitz_short_ons_1=""
 persist.rild.nitz_short_ons_2=""
 persist.rild.nitz_short_ons_3=""
+
+# Test Prop
+#ro.com.google.clientidbase.ms=android-hms-tmobile-us
+#ro.com.google.clientidbase.am=android-tmobile-us
+#ro.com.google.clientidbase.yt=android-samsung
+#ro.com.google.clientidbase.gmm=android-samsung
 
 # Stock Build.prop Setting
 debug.composition.type=c2d
